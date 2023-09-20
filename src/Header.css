@@ -1,0 +1,27 @@
+.header {
+    display: grid;
+    grid-template-areas: "header-logo header-title"
+                         "header-nav header-nav";
+    grid-template-columns: auto 1fr;
+
+    background-color: lightblue;
+    /* background-color: var(--header-bg); */
+}
+
+.header__logo{
+    grid-area: header-logo;
+}
+
+.header__title{
+    grid-area: header-title;
+    text-align: center;
+    color: black;
+}
+
+.header__nav{
+    grid-area: header-nav;
+    background-color: lightgrey;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

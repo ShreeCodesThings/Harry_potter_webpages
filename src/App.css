@@ -1,0 +1,16 @@
+/*display footer at the bottom of the page*/
+
+.app{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: darkslategray; 
+    /* background-color: var(--primary-bg); */
+
+    height: 100%;
+}
+
+
+/* .app .light{
+    --primary-bg: orange;
+    --header-bg: darkgray;
+} */

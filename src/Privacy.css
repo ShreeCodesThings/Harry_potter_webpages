@@ -1,0 +1,18 @@
+.privacy{
+   color: lightgray;
+}
+
+.privacy-para{
+    margin: 2rem;
+}
+
+.privacy-heading1{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.privacy-heading2{
+    margin: 2rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}

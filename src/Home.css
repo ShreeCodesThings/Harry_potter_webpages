@@ -1,0 +1,176 @@
+.home-div{
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+
+
+}
+
+.home-para{
+  font-size: 1.5rem;
+}
+
+.hogwarts_day_light{
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .modal__heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    color: black
+  }
+  
+  .modal p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+  }
+
+
+  .modal__open{
+    background-color: orangered;
+    width: auto;
+    height: 60px;
+  
+    border-radius: 20px;
+  
+    font-size: large;
+  }
+  
+  .modal{
+    background-color: whitesmoke;
+    background-size: 12px;
+  
+    font-weight: bold;
+  
+    align-items: center;
+    max-height: 75%;
+  }
+  
+  .modal__submit{
+    background-color: greenyellow;
+    width: 100px;
+    height: 40px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  
+    border-radius: 15px;
+    font-weight: bold;
+  
+    width: 100%;
+    color: black;
+  }
+  
+  .modal__cancel{
+    background-color: palevioletred;
+    width: 100px;
+    height: 40px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  
+    border-radius: 15px;
+    font-weight: bold;
+  
+    width: 100%;
+    color: black;
+  }
+  
+  @media screen and (min-width: 44rem){
+  
+    .hogwarts_day_light{
+      height: 350px;
+      width:100%;
+
+    }
+  
+  
+    .modal{
+      background-color: whitesmoke;
+      background-size: 12px;
+  
+      font-weight: bold;
+      border-radius: 20px;
+  
+      align-items: center;
+      max-width: 70%;
+  
+    }
+
+    .modal p{
+      font-size: 1.5rem;
+    }
+  
+    .modal__open{
+      position: absolute;
+    
+      left: 50%;
+      bottom: 1px;
+  
+
+      background-color: Orange;
+      width: 100px;
+      height: 60px;
+  
+      border-radius: 20px;
+  
+      font-size: large;
+
+      color: black;
+    }
+  
+    .modal__open:hover{
+      background-color: orange;
+    }
+  
+    .modal__heading{
+      text-align: center;
+      color: black;
+    }
+  
+    .modal__submit{
+      background-color: greenyellow;
+      width: 100px;
+      height: 40px;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+  
+      border-radius: 15px;
+      font-weight: bold;
+    }
+
+    .modal__submit:hover{
+      background-color: yellow;
+
+    }
+
+    .modal__cancel:hover{
+      background-color: red;
+
+    }
+
+
+  
+    .modal__cancel{
+      background-color:palevioletred;
+      width: 100px;
+      height: 40px;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+  
+      position: absolute;
+      /*bottom: 1%;*/
+      right: 4%;
+  
+      border-radius: 15px;
+      font-weight: bold;
+    }
+  }

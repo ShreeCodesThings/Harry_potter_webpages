@@ -1,0 +1,59 @@
+/*Adapted from https://css.gg/menu per the MIT License https://css.gg/doc/licence */
+.gg-menu {
+    transform: scale(var(--ggs,1))
+   }
+   
+   .gg-menu,
+   .gg-menu::after,
+   .gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background: currentColor
+   }
+   
+   .gg-menu::after,
+   .gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+   }
+   
+   .gg-menu::after {
+    top: 6px
+   } 
+
+   /*gg-menu close*/
+   .gg-close {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    justify-content: center;
+   }
+   
+   .gg-close::after,
+   .gg-close::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 4px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px;
+   }
+   
+   .gg-close::after {
+    transform: rotate(-45deg)
+   } 

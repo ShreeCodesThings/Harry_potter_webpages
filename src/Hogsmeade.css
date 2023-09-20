@@ -1,0 +1,129 @@
+/*responsible for tabbing through images*/
+
+.hogsmeade{
+    display: grid;
+    grid-template-areas: "heading"
+                          "info"
+                          "carousel";
+    position: relative;
+    background-image: url("https://source.unsplash.com/inGf_sjuuGA/1500x1500");
+}
+
+
+.hogsmeade h1{
+    grid-area: heading;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+.hogsmeade-intro{
+ background-color: pink;
+ height: 100%;
+ width: 100%;
+ font-size: 1.5rem;
+ padding: 1rem;
+ width: 80%;
+}
+
+.hogsmeade__carousel-container{
+    width: 75%;
+}
+
+.hogsmeade-carousel {
+    grid-area: carousel;
+    margin: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+    text-align: center;
+    width: 90vh;
+    height: 90vh;
+    background-color: lightblue;
+  }
+
+  
+  .hogsmeade__food-images {
+    display: flex;
+    overflow-x: scroll;
+    /* scrollbar-width: none; */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  
+  .hogsmeade__food-images::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .image-item {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0; 
+    font-size: 100px;
+    height: 30rem;
+    justify-content: center;
+    margin: 0 1rem;
+    position: relative;
+    scroll-snap-align: start;
+    transform: scale(1);
+    /* transform-origin: center center;
+    transition: transform .5s; */
+    width: 100%;
+  }
+  
+  /* .carousel__nav {
+    padding: 1.25rem .5rem;
+  } */
+  
+  .carousel-nav {
+    align-items: center;
+    background-color: palevioletred;
+    border-radius: 50%;
+    color: black;
+    display: inline-flex;
+    height: 2rem;
+    justify-content: center;
+    /* padding: .5rem; */
+    position: relative;
+    text-decoration: none;
+    width: 2.5rem;
+    padding: 2rem;
+  }
+  
+  .carousel-nav:hover,
+  .carousel-nav:active {
+    background-color:navy;
+    color: white;
+  }
+
+
+  .food-image1 {
+      display: flex;
+      max-width: auto;
+      max-height: auto;
+      width: auto;
+      height: auto;
+}
+
+  .image-caption{
+    font-size: medium;
+}
+
+
+@media screen and (min-width: 44rem){
+    /* .hogsmeade{
+        display: grid;
+        grid-template-areas: "heading heading"
+                              "intro intro"
+                              "carousel carousel1";
+    } */
+
+    .hogsmeade-intro{
+      width: 100%;
+    }
+
+}
+
+  
+

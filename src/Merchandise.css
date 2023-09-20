@@ -1,0 +1,62 @@
+.merchandise__heading{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 2rem;
+    background-color: white;
+
+}
+
+.merchandise__content{
+    padding: 2rem;
+    background-image: url("https://source.unsplash.com/SUTfFCAHV_A/1500x1500");
+}
+
+.merchandise__content p{
+    border-bottom: 4px solid black;
+    background-color: white;
+}
+
+.merchandise__heading2{
+    color: red;
+    text-transform: uppercase;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 44rem){
+    .merchandise__heading{
+        color: red;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        padding: 2rem;
+        background-color: white;
+
+    }
+
+    .merchandise__content{
+        display: grid;
+        grid-template-columns: auto 4fr;
+        position: relative;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .merchandise__content p {
+        background-color: white;
+        opacity: 0.8;
+        border: 1px black;
+        border-style: groove;
+        width: 60%;
+      }
+
+      @media screen and (prefers-reduced-motion: no-preference){
+        .merchandise p:hover
+        {
+            scale: 1.5;
+            transition: ease-in 700ms;
+        } 
+
+    }
+
+}

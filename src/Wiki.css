@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h2{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.wiki__accordion{
+    /* height: 100vh; */
+    background-image: url("https://source.unsplash.com/3n7DdlkMfEg/1500x1500");
+}
+
+.accordion-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkcyan;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+}
+
+.accordion-content{
+    background-color: lightsalmon;
+}
+
+.accordion-content ul{
+    list-style: none;
+}
+
+.accordion-content ul li{
+    border-bottom: 1px solid black;
+}
+
+.wiki__filler{
+    height:20vh;
+}
+
+@media screen and (min-width: 44rem){
+    .wiki__accordion{
+        height: 100%;
+    }
+}
+
